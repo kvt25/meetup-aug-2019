@@ -1,0 +1,72 @@
+<html>
+<head>
+    <title>Meetup Aug 2019 | Frontend Service</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <meta charset="utf-8"></meta>
+    <meta content="width=device-width, initial-scale=1" name="viewport"></meta>
+    <style>
+      body { background-color: #f8f9fa }
+      .main-content { margin-top: 60px }
+      .sidenav { height: 100%; width: 25%; position: fixed; z-index: 1; top: 60px; left: 5; overflow-x: hidden; background-color: #f1f1f1; }
+      form { margin: auto; border: 2px solid #dadce0; border-radius: 8px; padding: 20px }
+      .messages { width: 74%; float: right }
+      .message { padding: 10px; border-bottom: 1px solid black }
+      .msg-info { padding-top: 100px }
+      .gcp-logo { margin-top: 120px; margin-left: 20px }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#"><img src="images/wizelogo.svg"/></a>
+         <span class="navbar-brand">Guestbook | Frontend Service v2.0 | Updated</span>
+    </div>
+</nav>
+
+<div class="main-content container-fluid">
+    <div class="sidenav">
+        <form action="/post" enctype="multipart/form-data" method="post">
+            <div class="form-group">
+                <label for="userName">Your name</label>
+                <input type="text" id="userName" name="name" placeholder="Enter your name" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <label for="userMessage">Message</label>
+                <input type="text" id="userMessage" name="message" placeholder="Your message" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <label for="userImage">Your image</label>
+                <input type="file" name="file" class="form-control-file" accept=".jpg, image/jpeg" id="userImage">
+            </div>
+            <button type="submit" class="btn btn-secondary btn-block">Submit</button>
+        </form>
+        <img class="gcp-logo" src="images/gcp_logo.svg" width="300px" height="200px" />
+    </div>
+
+    <div class="messages">
+        <div class="row message h5 text-info">
+            <div class="col-sm-2 font-weight-bolder">Name</div>
+            <div class="col-sm-2 font-weight-bolder">Message</div>
+            <div class="col-sm-4 font-weight-bolder">Image Labels</div>
+            <div class="col-sm-4 font-weight-bolder">Uploaded image</div>
+        </div>
+        <div class="row message h5" th:each="message: ${messages}">
+            <div class="col-sm-2 msg-info font-weight-bolder" th:text="${message.name}">Username</div>
+            <div class="col-sm-2 msg-info font-italic" th:text="${message.message}">Message</div>
+            <div class="col-sm-4 msg-info"><code><span th:text="${message.imageLabels}">Labels</span></code></div>
+            <div class="col-sm-4">
+                <img alt="image" th:src="${message.imageUri}"
+                     height="300px" width="300px"
+                     th:unless="${#strings.isEmpty(message.imageUri)}"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,70 @@
+<svg width="119" height="28" viewBox="0 0 119 28" version="1.1" xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Page 1</title>
+  <defs>
+    <path id="path-1"
+      d="M13.192.103l-1.547 17.091L10.302.104H7.17l-1.588 17.09L4.28.104H.21l3.093 27.1h3.46L8.43 12.272l1.465 14.934h3.5L16.975.103z" />
+    <path id="path-3" d="M.076 27.205h4.191V.103H.076z" />
+    <path id="path-5" d="M.39.103v3.989h4.802L.104 25.782v1.423h9.442v-3.988H4.703L9.79 1.528V.103z" />
+    <path id="path-7" d="M.052.103v27.102h8.79v-4.029H4.242V15.12h3.052v-3.703H4.243V4.01h4.598V.103z" />
+    <path id="path-9" d="M.063.103v27.102h8.423v-2.808H2.993V.103z" />
+    <path id="path-11" d="M.074 27.205h2.97V.103H.074z" />
+    <path id="path-13"
+      d="M8.096.103v18.312l-1.221-4.394L2.684.103H.039v27.102h2.767V9.137l1.302 4.354 4.599 13.714h2.156V.103z" />
+    <path id="path-15" d="M.097.103v27.102h8.626v-2.727H3.026v-9.97h4.11v-2.645h-4.11V2.83h5.697V.103z" />
+  </defs>
+  <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Navigation" transform="translate(-150 -27)">
+      <g transform="translate(150 27)" id="Page-1">
+        <g id="Group-14" transform="translate(0 .107)">
+          <mask id="mask-2" fill="#fff">
+            <use xlink:href="#path-1" />
+          </mask>
+          <path id="Fill-12" fill="#fff" mask="url(#mask-2)" d="M-5.498 32.913h28.183V-5.605H-5.498z" />
+        </g>
+        <g id="Group-17" transform="translate(23.424 .107)">
+          <mask id="mask-4" fill="#fff">
+            <use xlink:href="#path-3" />
+          </mask>
+          <path id="Fill-15" fill="#fff" mask="url(#mask-4)" d="M-5.632 32.913H9.975V-5.605H-5.632z" />
+        </g>
+        <g id="Group-20" transform="translate(32.985 .107)">
+          <mask id="mask-6" fill="#fff">
+            <use xlink:href="#path-5" />
+          </mask>
+          <path id="Fill-18" fill="#fff" mask="url(#mask-6)" d="M-5.603 32.914h21.101V-5.605H-5.603z" />
+        </g>
+        <g id="Group-23" transform="translate(49.478 .107)">
+          <mask id="mask-8" fill="#fff">
+            <use xlink:href="#path-7" />
+          </mask>
+          <path id="Fill-21" fill="#fff" mask="url(#mask-8)" d="M-5.656 32.913H14.55V-5.605H-5.656z" />
+        </g>
+        <g id="Group-26" transform="translate(64.536 .107)">
+          <mask id="mask-10" fill="#fff">
+            <use xlink:href="#path-9" />
+          </mask>
+          <path id="Fill-24" fill="#E93D44" mask="url(#mask-10)" d="M-5.645 32.913h19.84V-5.605h-19.84z" />
+        </g>
+        <g id="Group-29" transform="translate(79.595 .107)">
+          <mask id="mask-12" fill="#fff">
+            <use xlink:href="#path-11" />
+          </mask>
+          <path id="Fill-27" fill="#E93D44" mask="url(#mask-12)" d="M-5.634 32.913H8.753V-5.605H-5.634z" />
+        </g>
+        <g id="Group-32" transform="translate(90.59 .107)">
+          <mask id="mask-14" fill="#fff">
+            <use xlink:href="#path-13" />
+          </mask>
+          <path id="Fill-30" fill="#E93D44" mask="url(#mask-14)" d="M-5.67 32.913h22.241V-5.605h-22.24z" />
+        </g>
+        <g id="Group-35" transform="translate(109.712 .107)">
+          <mask id="mask-16" fill="#fff">
+            <use xlink:href="#path-15" />
+          </mask>
+          <path id="Fill-33" fill="#E93D44" mask="url(#mask-16)" d="M-5.612 32.913h20.044V-5.605H-5.612z" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
