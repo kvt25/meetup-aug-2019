@@ -9,10 +9,10 @@ const vision = require('@google-cloud/vision');
 const mysql = require('mysql');
 
 const connectionName =
-  process.env.INSTANCE_CONNECTION_NAME || 'meetup-aug-2019:asia-east1:meetup-aug-2019-db';
-const dbUser = process.env.SQL_USER || 'meetup';
+  process.env.INSTANCE_CONNECTION_NAME || '<YOUR_CLOUDSQL_DATABASE_CONNECTION_NAME>';
+const dbUser = process.env.SQL_USER || '<YOUR_CLOUDSQL_USER_NAME>';
 const dbPassword = process.env.SQL_PASSWORD || '';
-const dbName = process.env.SQL_NAME || 'meetup2019';
+const dbName = process.env.SQL_NAME || '<YOUR_CLOUDSQL_DATABASE_NAME>';
 
 const mysqlConfig = {
   connectionLimit: 1,
